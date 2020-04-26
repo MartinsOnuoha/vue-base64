@@ -6,15 +6,22 @@
         <input @change="handleImage" class="custom-input" type="file" accept="image/*">
       </div>
     </div>
+    <div class="mt-10" style="text-align: center">
+      <h3>SERVER IMAGE</h3>
+      <img :src="remoteUrl" alt="">
+    </div>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'home',
   data() {
     return {
-      image: ''
+      image: '',
+      remoteUrl: ''
     }
   },
   methods: {
@@ -27,10 +34,20 @@ export default {
 
       reader.onload = (e) => {
         this.image = e.target.result;
+        this.uploadImage();
       };
       reader.readAsDataURL(fileObject);
-
     },
+    uploadImage() {
+      const { image } = this;
+      axios.post('http://127.0.0.1:8081/upload', { image })
+        .then((response) => {
+          this.remoteUrl = response.data.url;
+        })
+        .catch((err) => {
+          return new Error(err.message);
+        })
+    }
   },
 }
 </script>
