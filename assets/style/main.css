@@ -1,0 +1,26 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #d8dddb;
+}
+.container  {
+  display: flex;
+  justify-content: center;
+}
+.mt-10 {
+  margin-top: 10rem;
+}
+.bg-white {
+  background: #fff;
+}
+.card {
+  height: 10rem;
+  width: 20rem;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+img {
+  width: 17rem;
+}
