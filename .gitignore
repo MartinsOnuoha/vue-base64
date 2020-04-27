@@ -4,3 +4,4 @@ server/node_modules
 server/public/*.png
 server/public/*.jpg
 server/public/*.jpeg
+dist
