@@ -4,7 +4,7 @@
   "description": "An Example for handling base64 images in vue.js",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "base64-img": "^1.0.4",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
