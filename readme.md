@@ -1,6 +1,8 @@
 # Vue Base64
 An Example of handling base64 images in vue.js and Express Server. You can find a detailed walk through [here](https://medium.com/@martinsOnuoha/how-to-upload-base64-images-in-vue-nodejs-4e89635daebc)
 
+<img src="https://cdn-images-1.medium.com/max/1600/1*sqvzS__yQ7UFEwEE3xAvzw.gif">
+
 ## Directory Structure
 
 ```
